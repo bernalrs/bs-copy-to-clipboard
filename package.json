@@ -1,6 +1,6 @@
 {
   "name": "bs-copy-to-clipboard",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Reason bindings for copy-to-clipboard",
   "main": "lib/js/src/CopyToClipboard.js",
   "keywords": [
@@ -32,7 +32,9 @@
     "format": "prettier --write ./*.{js,json} ./**/*.{js,json}"
   },
   "author": "Remi Bernal <bernal.rs@gmail.com>",
-  "contributors": ["Remi Bernal <bernal.rs@gmail.com>"],
+  "contributors": [
+    "Remi Bernal <bernal.rs@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
@@ -49,7 +51,13 @@
     "react-dom": "^0.14.x || ^15.0.0 || ^16.0.0"
   },
   "lint-staged": {
-    "*.{js,json}": ["prettier --write", "git add"],
-    "src/**/*.re": ["refmt --in-place", "git add"]
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.re": [
+      "refmt --in-place",
+      "git add"
+    ]
   }
 }
