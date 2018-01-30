@@ -1,6 +1,6 @@
 {
   "name": "bs-copy-to-clipboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reason bindings for copy-to-clipboard",
   "main": "lib/js/src/CopyToClipboard.js",
   "keywords": [
