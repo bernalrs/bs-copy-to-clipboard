@@ -1,0 +1,10 @@
+{
+  "name": "bs-opy-to-clipboard",
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": ["src"],
+  "bs-dependencies": ["reason-react"],
+  "reason": {
+    "react-jsx": 2
+  },
+  "refmt": 3
+}

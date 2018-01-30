@@ -1,0 +1,55 @@
+{
+  "name": "bs-copy-to-clipboard",
+  "version": "0.0.0",
+  "description": "Reason bindings for copy-to-clipboard",
+  "main": "lib/js/src/CopyToClipboard.js",
+  "keywords": [
+    "react",
+    "react-component",
+    "copy-to-clipboard",
+    "reason-react",
+    "bucklescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernalrs/bs-copy-to-clipboard.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "bugs": {
+    "url": "https://github.com/bernalrs/bs-copy-to-clipboard/issues"
+  },
+  "homepage": "https://github.com/bernalrs/bs-copy-to-clipboard/readme",
+  "scripts": {
+    "precommit": "lint-staged",
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "yarn run clean && yarn run build",
+    "release": "yarn run prepare && release-it",
+    "format": "prettier --write ./*.{js,json} ./**/*.{js,json}"
+  },
+  "author": "Remi Bernal <bernal.rs@gmail.com>",
+  "contributors": ["Remi Bernal <bernal.rs@gmail.com>"],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "bs-platform": "2.1.0",
+    "husky": "0.14.3",
+    "lint-staged": "6.0.0",
+    "prettier": "1.9.2",
+    "reason-react": "^0.3.0",
+    "release-it": "^6.1.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "react@^0.14.0 || ^15.0.0 || ^16.0.0",
+    "react-dom": "^0.14.x || ^15.0.0 || ^16.0.0"
+  },
+  "lint-staged": {
+    "*.{js,json}": ["prettier --write", "git add"],
+    "src/**/*.re": ["refmt --in-place", "git add"]
+  }
+}
