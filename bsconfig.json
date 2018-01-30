@@ -1,5 +1,5 @@
 {
-  "name": "bs-opy-to-clipboard",
+  "name": "bs-copy-to-clipboard",
   "bsc-flags": ["-bs-super-errors"],
   "sources": ["src"],
   "bs-dependencies": ["reason-react"],
